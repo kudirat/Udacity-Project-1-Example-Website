@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Thasadith&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Elsie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Buda&display=swap');
 .container{
     display: grid;
    grid-template-columns: 300px;
@@ -128,10 +131,12 @@ img {
 
 #ptwo{
     margin-right: 100px;
+    font-family: 'Thasadith', sans-serif;
 }
 
 #pthree{
     margin-top: 30px;
+    font-family: 'Buda', cursive;
 }
 
 .sub{
@@ -143,11 +148,9 @@ img {
 }
 
 #picfour {
-    
     display: block;
     margin-left: 150px;
     width: 400px;
-    
     border: 1px solid #F4F0EE;
     filter: drop-shadow(10px 10px 4px #e4cab8);
 }
@@ -156,11 +159,11 @@ img {
     height: 30vh;
     margin-right: 300px;
     margin-left: 50px;
-
 }
 
 .sub > h1, h2, h3 {
     margin-right: 350px;
+    font-family: 'Elsie', cursive;
 }
 
 .sub img {
@@ -347,7 +350,7 @@ img {
 
     .navbar{
         grid-area: nav;
-        width: 155vh;
+        width: 154.8vh;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -499,7 +502,7 @@ img {
     
     .footer{
         grid-area: ft;
-        width: 151vh;
+        width: 150.2vh;
         display:flex;
         flex-direction: row;
         border: 1px solid #6d6561;
