@@ -1,0 +1,255 @@
+.container{
+    display: grid;
+    width:250vh;
+   grid-template-columns: 300px 300px 300px;
+   grid-template-rows: 60px 750px;
+    grid-template-areas: 
+    "nav nav nav nav nav nav nav nav"
+    "deets main main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+    border: 3px solid #240910;
+
+}
+
+.navbar{
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #250807;
+}
+
+.navbar * {
+    font:  40px 'Mystery Quest', cursive;
+    color: #fae6e0;
+    text-decoration: none;
+}
+
+#recs{
+margin-right: auto;
+padding-left: 20px;
+}
+
+.navbar .gg-coffee {
+    margin-left: 50px;
+    height: 20px;
+    width: 25px;
+}
+
+#home{
+    padding-right: 50px;
+}
+
+.details{
+    grid-area: deets;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    
+}
+
+.details img{
+    
+    margin-left: 30px;
+    margin-right: auto;
+    padding-top:30px;
+    height: 200px;
+    width: 230px;
+}
+
+.details h1{
+    text-align: center;
+    font-size:  25px;
+}
+
+.details h2{
+    text-align: center;
+    padding: 10px;
+    
+
+}
+
+.details h3{
+    text-align: center;
+    padding: auto;
+}
+
+.details p{
+    text-align: center;
+    padding-top: auto;
+}
+
+
+.main{
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 25px;
+    border: 5px solid #75565f;
+    background-color: #F4F0EE;
+}
+
+
+.card {
+width: 50%;
+margin: 10px;
+padding: 5px;
+flex-wrap: wrap;
+justify-content: center;
+border: 5px solid #75565f;
+background-color: white;
+}
+
+.card img {
+    grid-area: pic;
+    width : 400px;
+    height: 260px;
+    padding-bottom: 30px;
+    border: 1px solid #F4F0EE;
+    filter: drop-shadow(10px 10px 4px #b79499);
+}
+
+.card *{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    font-size: 10px;
+}
+
+.card a{
+
+    justify-content: center;
+    padding-top:30px;
+    padding-bottom: 30px;
+    text-shadow: 2px 2px 5px #6d6561;
+    font: 30px 'Mystery Quest', cursive;
+    text-decoration: none;
+
+}
+
+.card p{
+    grid-area: des;
+    width: 400px;
+    height: 210px;
+    border: 1px solid #1D2129;
+    background-color: white;
+    filter: drop-shadow(5px 5px 4px #e4cab8);
+    font: 15px Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+.footer{
+    grid-area: ft;
+    border: 1px solid #6d6561;
+    background-color: #250807;
+    color: #fae6e0;
+    padding-left: 30px;
+    font-size: 12px;
+}
+
+@media (min-width: 600px) and (max-width:840px) {
+    .container {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 60px 660px;
+         grid-template-areas: 
+         "nav nav nav nav"
+         "deets main main main"
+         "deets main main main"
+         "deets main main main"
+         "ft ft ft ft";
+        width: 100vh;
+         border: 0.5px solid #6d6561;
+     
+    }
+
+    .details {
+        grid-area: deets;
+    }
+
+    .navbar{
+        grid-area:nav;
+        background-color: #240910;
+    }
+    .main{
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 450px;
+    }
+
+    .footer{
+        grid-area:ft;
+    }
+    
+  }
+
+
+  @media (max-width:599px) {
+    .container {
+        width:600px;
+        display: grid;
+        grid-template-areas: 
+         "nav nav"
+         "deets deets"
+         "deets deets"
+         "main main"
+         "main main"
+         "main main"
+         "ft ft";
+     
+         border: 0.5px solid black;
+     
+    }
+
+    .navbar{
+        grid-area:nav;
+        background-color: #240910;
+    }
+
+    .navbar *{
+        font-size: 30px;
+    }
+
+    .navbar .gg-coffee {
+        margin-left: 5px;
+    }
+
+    .details {
+        grid-area: deets;
+        margin: auto;
+        
+    }
+
+    .details img {
+        width:400px;
+        height: 300px;
+        padding-left: 70px;
+    }
+
+    .details p{
+        padding-bottom: 70px;;
+    }
+
+    .main{
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 450px;
+    }
+
+    .footer{
+        grid-area:ft;
+    }
+    
+  }
