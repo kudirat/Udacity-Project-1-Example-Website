@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Elsie&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Buda&display=swap');
 .container{
+    width:100%;
     display: grid;
    grid-template-columns: 300px;
    grid-template-rows: 40px 450px 660px 150px;
@@ -19,6 +20,7 @@
 }
 
 .navbar{
+    width: 100%;
     grid-area: nav;
     display: flex;
     flex-direction: row;
@@ -51,6 +53,7 @@
 
 
 .top {
+    width: 100%;
     grid-area: tp;
     justify-content: center;
     padding: 15px;
@@ -82,17 +85,18 @@
     grid-row-gap: 10px;
     border: 5px solid #5b3c43;
     margin: 5px;
-    padding: 25px;
+    margin-left: 250px;
+    padding: 5px;
+    width: 80%;
 }
 
 
 #pictwo {
     
     display: block;
-    margin-left: auto;
-    
-   
-    width: 400p;
+    margin-left: 250px;
+    height:250px;
+    width: 400px;
     
     border: 1px solid #F4F0EE;
     filter: drop-shadow(10px 10px 4px #e4cab8);
@@ -101,10 +105,10 @@
 #picthree {
     
     display: block;
-    
-    
+    margin-left: 200px;
+   
     padding: 20px;
-    width: 400p;
+    width: 60%;
    
     border: 1px solid #F4F0EE;
     filter: drop-shadow(10px 10px 4px #e4cab8);
@@ -112,7 +116,6 @@
 
 
 img {
-
     display: block;
     height: 260px;
     border: 1px solid #F4F0EE;
@@ -129,45 +132,56 @@ img {
     filter: drop-shadow(5px 5px 4px #e4cab8);
 }
 
+#pone{
+    font: 100;
+    margin-left: 200px;
+}
+
 #ptwo{
-    margin-right: 100px;
+    display: block;
+    margin-right: 300px;
+    margin-left: 10px;
     font-family: 'Thasadith', sans-serif;
 }
 
 #pthree{
-    margin-top: 30px;
+   margin-left: 200px;
     font-family: 'Buda', cursive;
 }
 
 .sub{
     grid-area: sub;
-    margin-left: 350px;
-    margin-right: 100px;
+    
     text-align: center;
     background-color: rgb(255, 255, 255);
 }
 
 #picfour {
     display: block;
-    margin-left: 150px;
+    margin-left: 250px;
     width: 400px;
     border: 1px solid #F4F0EE;
     filter: drop-shadow(10px 10px 4px #e4cab8);
 }
 
+.sub{
+    margin-left: 200px;
+    width: 80%;
+}
 .sub > p{
     height: 30vh;
     margin-right: 300px;
-    margin-left: 50px;
+    margin-left: 480px;
 }
 
 .sub > h1, h2, h3 {
-    margin-right: 350px;
+    margin-right: 200px;
     font-family: 'Elsie', cursive;
 }
 
 .sub img {
-    margin-left: 220px;
+    margin-left: 700px;
+    
 }
 
 .footer{
@@ -181,7 +195,7 @@ img {
 }
 
 
-@media (min-width: 580px) and (max-width:1262px) {
+@media (min-width: 580px) and (max-width:1420px) {
     .container {
         display: grid;
         grid-template-rows: 40px 450px 660px;
@@ -254,7 +268,7 @@ img {
     #pictwo {
         
         display: block;
-        margin-left: 80px;
+        margin-left: 380px;
         
         padding: 20px;
         width: 400p;
@@ -266,7 +280,7 @@ img {
     #picthree {
         
         display: block;
-        margin-left: 5px;
+        margin-left: 270px;
         
         padding: 20px;
         width: 400p;
@@ -278,7 +292,7 @@ img {
     #picfour {
         
         display: block;
-        margin-left: 80px;
+        margin-left: 380px;
         
         padding: 20px;
         width: 400p;
@@ -307,7 +321,7 @@ img {
     }
 
     #ptwo{
-        margin-right: 500px;
+       margin-left: 200px;
     }
 
     .sub{
@@ -364,13 +378,14 @@ img {
         grid-area: tp;
         justify-content: center;
         padding: 15px;
+        margin-left: 100px;
     }
     
     .top h1{
         text-align: center;
         height: 30px;
         text-shadow: 2px 2px 5px #6d6561;
-    
+        
     }
     
     #picone {
@@ -457,7 +472,7 @@ img {
 
     .sub{
         grid-area: sub;
-       margin-left: 130px;
+       margin-left: 430px;
        
         text-align: center;
         background-color: rgb(255, 255, 255);
@@ -492,7 +507,7 @@ img {
     #picfour {
         display: block;
         
-        margin-left: 300px;
+        margin-left: 600px;
         padding: 20px;
         width: 400px;
         border: 1px solid #F4F0EE;
